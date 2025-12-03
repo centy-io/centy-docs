@@ -23,7 +23,7 @@ function HomepageHeader() {
             className="button button--secondary button--lg"
             to="/docs/intro">
             <Translate id="homepage.cta.button">
-              Docusaurus Tutorial - 5min
+              Get Started
             </Translate>
           </Link>
         </div>
