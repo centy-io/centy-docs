@@ -34,8 +34,11 @@ Use Handlebars-powered templates for consistent issue and documentation creation
 ## Quick Start
 
 ```bash
-# Install Centy CLI
-npm install -g centy-cli
+# Install Centy CLI (pnpm recommended)
+pnpm add -g centy-cli
+
+# Or run directly without installing
+pnpm dlx centy-cli init
 
 # Initialize in your project
 centy init
