@@ -11,7 +11,7 @@ For local development, run both the daemon and the web app:
 
 ```bash
 # Terminal 1: Start the daemon
-centy-daemon
+npx centy start
 
 # Terminal 2: Start the web app
 cd centy-app
