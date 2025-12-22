@@ -33,6 +33,8 @@ Use Handlebars-powered templates for consistent issue and documentation creation
 
 ## Quick Start
 
+**Want to try it first?** [Explore the demo](./demo-mode) with sample data - no installation required.
+
 ```bash
 # Install Centy CLI (pnpm recommended)
 pnpm add -g centy
