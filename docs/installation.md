@@ -9,9 +9,9 @@ Get Centy up and running in your development environment.
 ## Requirements
 
 - Node.js 18 or higher
-- pnpm (recommended), npm, or yarn
+- pnpm (recommended)
 
-## Install via pnpm (Recommended)
+## Install via pnpm
 
 ```bash
 pnpm add -g centy
@@ -24,18 +24,6 @@ You can also run Centy directly without global installation:
 ```bash
 pnpm dlx centy init
 pnpm dlx centy create issue
-```
-
-## Install via npm
-
-```bash
-npm install -g centy
-```
-
-## Install via yarn
-
-```bash
-yarn global add centy
 ```
 
 ## Verify Installation
@@ -62,14 +50,7 @@ This creates the `.centy/` folder structure with default configuration.
 To update to the latest version:
 
 ```bash
-# pnpm (recommended)
 pnpm update -g centy
-
-# npm
-npm update -g centy
-
-# yarn
-yarn global upgrade centy
 ```
 
 ## Uninstalling
@@ -77,14 +58,7 @@ yarn global upgrade centy
 To remove Centy from your system:
 
 ```bash
-# pnpm
 pnpm remove -g centy
-
-# npm
-npm uninstall -g centy
-
-# yarn
-yarn global remove centy
 ```
 
 ## Next Steps
