@@ -4,25 +4,34 @@ sidebar_position: 5
 
 # Issues
 
-Issues are the core unit of work tracking in Centy. Each issue is stored as a folder containing a Markdown file for content and a JSON file for metadata.
+Issues are the core unit of work tracking in Centy. Each issue is stored as a single Markdown file with YAML frontmatter containing metadata.
 
 ## Issue Structure
 
-Each issue is stored in `.centy/issues/` with a UUID-based folder name:
+Each issue is stored in `.centy/issues/` as a single `.md` file named by UUID:
 
 ```
 .centy/issues/
-└── 6a740dbd-ec2d-45f9-9927-fdcb6c3d3801/
-    ├── issue.md       # Issue content (title + description)
-    ├── metadata.json  # Issue metadata
-    └── assets/        # Issue-specific assets
+├── 6a740dbd-ec2d-45f9-9927-fdcb6c3d3801.md   # Single file with frontmatter
+└── assets/
+    └── 6a740dbd-ec2d-45f9-9927-fdcb6c3d3801/ # Issue-specific assets
+        └── screenshot.png
 ```
 
-### issue.md
+### File Format
 
-The Markdown file contains the issue title and description:
+Each issue file contains YAML frontmatter for metadata followed by the issue content:
 
 ```markdown
+---
+displayNumber: 1
+status: "open"
+priority: 1
+createdAt: "2025-01-15T10:30:00.000Z"
+updatedAt: "2025-01-15T10:30:00.000Z"
+draft: false
+compacted: false
+---
 # Fix authentication bug
 
 Users are unable to log in when using SSO.
@@ -32,20 +41,6 @@ The error appears after the OAuth callback.
 1. Click "Login with Google"
 2. Complete Google authentication
 3. Observe redirect failure
-```
-
-### metadata.json
-
-The JSON file contains structured metadata:
-
-```json
-{
-  "displayNumber": 1,
-  "status": "open",
-  "priority": 1,
-  "createdAt": "2025-01-15T10:30:00.000Z",
-  "updatedAt": "2025-01-15T10:30:00.000Z"
-}
 ```
 
 ## Creating Issues
@@ -148,6 +143,13 @@ centy delete issue 1 --force
 Custom fields defined in `config.json` will also appear in metadata.
 
 ## Working with Assets
+
+Assets are stored in a separate `assets/` directory under `.centy/issues/`, organized by issue UUID:
+
+```
+.centy/issues/assets/6a740dbd-ec2d-45f9-9927-fdcb6c3d3801/
+└── screenshot.png
+```
 
 Attach files to issues:
 

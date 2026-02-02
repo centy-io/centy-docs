@@ -11,7 +11,7 @@ Centy is designed from the ground up to work seamlessly with AI assistants and L
 Traditional issue trackers require human interaction through web interfaces. Centy's file-based approach means:
 
 - AI assistants can read and understand issues directly from the filesystem
-- Structured JSON metadata is machine-parseable
+- YAML frontmatter metadata is machine-parseable
 - Markdown content is human-readable and LLM-friendly
 - CLI commands provide a safe interface for AI modifications
 
@@ -114,6 +114,7 @@ AI assistants can read the `.centy/` folder to understand:
    - LLM-specific settings
 
 2. **Current Issues** (`.centy/issues/`)
+   - Issue files use YAML frontmatter for metadata
    - What work is planned
    - What's currently in progress
    - Historical context from closed issues
