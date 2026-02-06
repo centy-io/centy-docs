@@ -36,11 +36,11 @@ Use Handlebars-powered templates for consistent issue and documentation creation
 **Want to try it first?** [Explore the demo](./demo-mode) with sample data - no installation required.
 
 ```bash
-# Install Centy CLI (pnpm recommended)
-pnpm add -g centy
+# Install the daemon via shell script
+curl -fsSL https://github.com/centy-io/installer/releases/latest/download/install.sh | sh
 
-# Or run directly without installing
-pnpm dlx centy init
+# Install the CLI
+pnpm add -g centy
 
 # Initialize in your project
 centy init

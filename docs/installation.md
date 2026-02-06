@@ -6,15 +6,32 @@ sidebar_position: 3
 
 Get Centy up and running in your development environment.
 
-## Requirements
+## Install via Shell Script (recommended)
 
-- Node.js 18 or higher
-- pnpm (recommended)
+The fastest way to install the Centy daemon — no Node.js required:
 
-## Install via pnpm
+```bash
+curl -fsSL https://github.com/centy-io/installer/releases/latest/download/install.sh | sh
+```
+
+This detects your OS and architecture, downloads the correct binary, and installs the daemon to `~/.centy/bin/`.
+
+To also use the CLI, install it via pnpm:
 
 ```bash
 pnpm add -g centy
+```
+
+## Install via pnpm
+
+If you already have Node.js, you can install everything through pnpm:
+
+```bash
+# Install the CLI
+pnpm add -g centy
+
+# Install the daemon
+centy install daemon
 ```
 
 ### Run without Installing
@@ -47,7 +64,13 @@ This creates the `.centy/` folder structure with default configuration.
 
 ## Updating Centy
 
-To update to the latest version:
+To update the daemon to the latest version, re-run the install script:
+
+```bash
+curl -fsSL https://github.com/centy-io/installer/releases/latest/download/install.sh | sh
+```
+
+To update the CLI:
 
 ```bash
 pnpm update -g centy
@@ -58,8 +81,20 @@ pnpm update -g centy
 To remove Centy from your system:
 
 ```bash
+# Remove the CLI
 pnpm remove -g centy
+
+# Remove the daemon
+rm -rf ~/.centy/bin
 ```
+
+## Supported Platforms
+
+| OS      | Architecture         |
+|---------|----------------------|
+| macOS   | Intel, Apple Silicon |
+| Linux   | x86_64, ARM64        |
+| Windows | x86_64               |
 
 ## Next Steps
 
