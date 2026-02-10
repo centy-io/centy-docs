@@ -6,11 +6,11 @@
     "message": "תיעוד עבור Centy"
   },
   "homepage.title": {
-    "message": "ברוכים הבאים ל-{title}",
+    "message": "מעקב משימות מונע בינה מלאכותית",
     "description": "The homepage title"
   },
   "homepage.description": {
-    "message": "תיעוד עבור Centy - מערכת מעקב משימות מונעת בינה מלאכותית",
+    "message": "Centy היא מערכת מעקב משימות מונעת בינה מלאכותית שחיה בריפוזיטורי שלך. מבוססת קבצים, עם בקרת גרסאות ובנויה למפתחים.",
     "description": "The homepage meta description"
   },
   "homepage.features.fileBased.title": {

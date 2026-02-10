@@ -6,11 +6,11 @@
     "message": "Documentation for Centy"
   },
   "homepage.title": {
-    "message": "Hello from {title}",
+    "message": "AI-Native Issue Tracking",
     "description": "The homepage title"
   },
   "homepage.description": {
-    "message": "Documentation for Centy - your AI-powered issue tracking system",
+    "message": "Centy is an AI-native issue tracking system that lives in your repository. File-based, version controlled, and built for developers.",
     "description": "The homepage meta description"
   },
   "homepage.features.fileBased.title": {
