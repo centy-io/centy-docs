@@ -8,7 +8,8 @@
       "Bash(pnpm run build:*)",
       "Bash(git add:*)",
       "Bash(git commit:*)",
-      "Bash(centy create issue:*)"
+      "Bash(centy create issue:*)",
+      "Bash(git push:*)"
     ],
     "deny": ["Bash(gh issue create:*)"],
     "ask": []
