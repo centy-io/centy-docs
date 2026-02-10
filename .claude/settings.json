@@ -9,7 +9,18 @@
       "Bash(git add:*)",
       "Bash(git commit:*)",
       "Bash(centy create issue:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(command -v:*)",
+      "Bash(centy show:*)",
+      "Bash(centy list:*)",
+      "Bash(centy --help:*)",
+      "Bash(git checkout:*)",
+      "Bash(pnpm build:*)",
+      "Bash(pnpm install:*)",
+      "Bash(centy update:*)",
+      "Bash(gh pr create:*)",
+      "Bash(gh pr merge:*)",
+      "Bash(gh pr view:*)"
     ],
     "deny": ["Bash(gh issue create:*)"],
     "ask": []
