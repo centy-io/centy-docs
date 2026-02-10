@@ -24,7 +24,8 @@ After running `centy init`, a `config.json` file is created:
     "autoCloseOnComplete": true,
     "updateStatusOnStart": false,
     "allowDirectEdits": false
-  }
+  },
+  "hooks": []
 }
 ```
 
@@ -263,3 +264,4 @@ CENTY_PRIORITY_LEVELS=5 centy create issue
 
 - [Managing Issues](./issues/) - Learn how to create and manage issues
 - [Templates](./templates) - Create templates for consistent issue creation
+- [Hooks](./hooks) - Run custom scripts before or after operations
