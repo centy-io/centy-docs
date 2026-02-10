@@ -6,11 +6,11 @@
     "message": "Documentation pour Centy"
   },
   "homepage.title": {
-    "message": "Bienvenue sur {title}",
+    "message": "Suivi des Issues Natif IA",
     "description": "The homepage title"
   },
   "homepage.description": {
-    "message": "Documentation pour Centy - votre système de suivi des issues propulsé par l'IA",
+    "message": "Centy est un système de suivi des issues natif IA qui vit dans votre dépôt. Basé sur des fichiers, versionné et conçu pour les développeurs.",
     "description": "The homepage meta description"
   },
   "homepage.features.fileBased.title": {
