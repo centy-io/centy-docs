@@ -33,7 +33,7 @@
     "@docusaurus/module-type-aliases": "3.9.2",
     "@docusaurus/tsconfig": "3.9.2",
     "@docusaurus/types": "3.9.2",
-    "@types/node": "^20.0.0",
+    "@types/node": "^25.3.0",
     "png-to-ico": "^3.0.1",
     "sharp": "^0.34.5",
     "tsx": "^4.0.0",
