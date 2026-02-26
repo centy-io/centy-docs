@@ -73,3 +73,4 @@ When you initialize Centy in a project, it creates a `.centy/` folder:
 - [Organizations](./organizations) - Group projects into organizations
 - [Templates](./templates) - Create custom templates
 - [LLM Integration](./llm-integration) - Configure AI assistant behavior
+- [Marketplace](./marketplace) - Browse all Centy npm packages
