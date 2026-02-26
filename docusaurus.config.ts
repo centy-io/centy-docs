@@ -65,6 +65,7 @@ const config: Config = {
       'classic',
       {
         docs: {
+          routeBasePath: '/',
           sidebarPath: './sidebars.ts',
           editUrl: 'https://github.com/centy-io/centy-docs/tree/main/',
         },
@@ -110,7 +111,7 @@ const config: Config = {
           items: [
             {
               label: 'Getting Started',
-              to: '/docs/',
+              to: '/',
             },
           ],
         },
