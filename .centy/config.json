@@ -1,17 +1,7 @@
 {
-  "allowedStates": [
-    "open",
-    "in-progress",
-    "closed"
-  ],
   "customFields": [],
-  "defaultState": "open",
   "defaults": {},
   "hooks": [],
-  "llm.allowDirectEdits": false,
-  "llm.autoCloseOnComplete": true,
-  "llm.defaultWorkspaceMode": 0,
-  "llm.updateStatusOnStart": false,
   "priorityColors": {},
   "priorityLevels": 3,
   "stateColors": {},

@@ -20,7 +20,9 @@
       "Bash(centy update:*)",
       "Bash(gh pr create:*)",
       "Bash(gh pr merge:*)",
-      "Bash(gh pr view:*)"
+      "Bash(gh pr view:*)",
+      "Bash(git:*)",
+      "Bash(gh run:*)"
     ],
     "deny": ["Bash(gh issue create:*)"],
     "ask": []
