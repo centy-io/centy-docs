@@ -26,8 +26,8 @@
     "@mdx-js/react": "^3.0.0",
     "clsx": "^2.0.0",
     "prism-react-renderer": "^2.3.0",
-    "react": "^19.2.6",
-    "react-dom": "^19.2.6"
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.10.1",
@@ -36,9 +36,9 @@
     "@types/node": "^20.0.0",
     "png-to-ico": "^3.0.1",
     "sharp": "^0.34.5",
-    "tsx": "^4.22.3",
+    "tsx": "^4.22.4",
     "typescript": "~5.9.3",
-    "wrangler": "^4.95.0"
+    "wrangler": "^4.97.0"
   },
   "browserslist": {
     "production": [
