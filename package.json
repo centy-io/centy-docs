@@ -40,9 +40,9 @@
     "eslint-config-agent": "3.1.0",
     "png-to-ico": "^3.0.2",
     "sharp": "^0.35.3",
-    "tsx": "^4.23.11",
+    "tsx": "^4.23.12",
     "typescript": "~6.0.3",
-    "wrangler": "^4.120.0"
+    "wrangler": "^4.123.0"
   },
   "browserslist": {
     "production": [
