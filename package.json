@@ -35,14 +35,14 @@
     "@docusaurus/module-type-aliases": "3.10.2",
     "@docusaurus/tsconfig": "3.10.2",
     "@docusaurus/types": "3.10.2",
-    "@types/node": "^26.4.0",
+    "@types/node": "^26.4.1",
     "eslint": "^9.39.4",
     "eslint-config-agent": "3.1.0",
     "png-to-ico": "^3.0.2",
     "sharp": "^0.35.4",
-    "tsx": "^4.23.12",
+    "tsx": "^4.23.13",
     "typescript": "~6.0.3",
-    "wrangler": "^4.127.1"
+    "wrangler": "^4.129.0"
   },
   "browserslist": {
     "production": [
