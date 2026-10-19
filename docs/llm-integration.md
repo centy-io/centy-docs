@@ -150,6 +150,32 @@ When working with this Centy project:
 3. Close when done: centy close issue N --comment "reason"
 ```
 
+### MCP
+
+Centy daemon 0.15.1 and later serves a built-in MCP endpoint on loopback. No separate package or session handshake is needed.
+
+- **URL:** `http://127.0.0.1:50052/mcp`
+- **Daemon:** must be running for MCP to work.
+- **Tools:** each daemon RPC is a tool named `centy_v1_CentyDaemon_<Method>`.
+- **Address:** change it with `--mcp-addr` or `CENTY_MCP_ADDR`. It must stay a loopback address.
+
+The `centy` plugin from the centy-daemon marketplace configures the URL for you. To configure it yourself, add this to `.mcp.json`:
+
+```json
+{
+  "mcpServers": {
+    "centy": {
+      "type": "http",
+      "url": "http://127.0.0.1:50052/mcp"
+    }
+  }
+}
+```
+
+Or run `claude mcp add --transport http centy http://127.0.0.1:50052/mcp`.
+
+The `centy-mcp` npm package is deprecated. Do not install or run it.
+
 ### With GitHub Copilot
 
 Centy issues can inform Copilot suggestions by providing context about current work and project requirements.
