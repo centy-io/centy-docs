@@ -158,6 +158,7 @@ Centy daemon 0.15.1 and later serves a built-in MCP endpoint on loopback. No sep
 - **Daemon:** must be running for MCP to work.
 - **Tools:** each daemon RPC is a tool named `centy_v1_CentyDaemon_<Method>`.
 - **Address:** change it with `--mcp-addr` or `CENTY_MCP_ADDR`. It must stay a loopback address.
+- **Paths:** `projectPath` and any other path argument must be an absolute path. Since centy-daemon 0.16.0, relative paths are rejected with `INVALID_PATH`.
 
 The `centy` plugin from the centy-daemon marketplace configures the URL for you. To configure it yourself, add this to `.mcp.json`:
 
