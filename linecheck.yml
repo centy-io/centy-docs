@@ -1,0 +1,37 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/tupe12334/linecheck/main/schema/linecheck.schema.json
+
+rules:
+  # Source and build config: the --default preset (warn 200 / error 400).
+  - pattern: "**/*.ts"
+    warn: 200
+    warn_message: "Getting long — consider splitting into smaller modules"
+    error: 400
+    error_message: "Too large to review easily; split this file now"
+  - pattern: "**/*.tsx"
+    warn: 200
+    warn_message: "Getting long — extract sub-components"
+    error: 400
+    error_message: "Too large to review easily; split this component now"
+  - pattern: "**/*.js"
+    warn: 200
+    warn_message: "Getting long — consider splitting into smaller modules"
+    error: 400
+    error_message: "Too large to review easily; split this file now"
+  - pattern: "**/*.tf"
+    warn: 200
+    warn_message: "Getting long — consider splitting into more modules"
+    error: 400
+    error_message: "Too large to review easily; split this file now"
+
+  # Docs pages legitimately run longer than code. Reference pages are the
+  # exception, so the error tier only catches genuinely unreadable pages.
+  - pattern: "**/*.md"
+    warn: 400
+    warn_message: "Long page — consider splitting it or adding sub-pages"
+    error: 1000
+    error_message: "Page is too long to read; split it into sub-pages"
+
+exclude:
+  - "pnpm-lock.yaml"
+  # Docusaurus-generated translation bundles, not hand-written.
+  - "i18n/**/code.json"
