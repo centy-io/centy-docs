@@ -43,7 +43,7 @@
     "sharp": "^0.35.5",
     "tsx": "^4.23.15",
     "typescript": "~6.0.3",
-    "wrangler": "^4.156.0"
+    "wrangler": "^4.158.0"
   },
   "browserslist": {
     "production": [
